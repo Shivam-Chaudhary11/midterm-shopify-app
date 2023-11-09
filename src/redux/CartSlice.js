@@ -41,12 +41,9 @@ const cartSlice = createSlice({
         if (state.cartItems[itemIndex].itemQuantity > 1) {
           state.cartItems[itemIndex].itemQuantity -= 1;
         } else {
-          state.cartItems.map(() => {
-            const filteredCartItems = state.cartItems.filter(
-              (item) => item.id !== action.payload.id
-            );
-            state.cartItems = filteredCartItems;
-          });
+          state.cartItems = state.cartItems.filter(
+            (item) => item.id !== action.payload.id
+          );
         }
       }
     },
@@ -101,12 +98,9 @@ const cartSlice = createSlice({
       }
     },
     removeFromWishlist(state, action) {
-      state.wishListItems.map(() => {
-        const filteredWishItems = state.wishListItems.filter(
-          (item) => item.id !== action.payload.id
-        );
-        state.wishListItems = filteredWishItems;
-      });
+      state.wishListItems = state.wishListItems.filter(
+        (item) => item.id !== action.payload.id
+      );
     },
   },
 });

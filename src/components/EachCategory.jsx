@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Endpoints from "../api/Endpoints";
 import Product from "./Product";
 import { RingLoader } from "react-spinners";
@@ -8,19 +8,19 @@ function EachCategory(props) {
   const { categoryName } = props.data;
   const [catProducts, setCatProducts] = useState([]);
 
-  const fetchData = () => {
+  const fetchData = useCallback(() => {
     axios
       .get(Endpoints.CATEGORY_URL + categoryName)
       .then((res) => {
         setCatProducts(res.data);
       })
       .catch((err) => console.log(err));
-  };
+  }, [categoryName]);
 
   useEffect(() => {
     setCatProducts([]);
     fetchData();
-  }, [categoryName]);
+  }, [categoryName, fetchData]);
 
   return (
     <>
@@ -47,4 +47,5 @@ function EachCategory(props) {
     </>
   );
 }
+
 export default EachCategory;

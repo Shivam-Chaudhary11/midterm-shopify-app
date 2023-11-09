@@ -1,7 +1,7 @@
 .mainCartDiv {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;

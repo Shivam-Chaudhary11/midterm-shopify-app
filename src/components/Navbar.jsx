@@ -26,7 +26,6 @@ function Navbar() {
           <button
             className="btn btn-light dropdown-toggle dropDownBtn"
             href="#"
-            role="button"
             data-toggle="dropdown"
             aria-expanded="false"
           >
