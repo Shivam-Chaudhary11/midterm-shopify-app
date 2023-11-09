@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { BsFillCartFill } from "react-icons/bs";
 
 function WishlistItems(props) {
-  const { id, title, price, description, category, image, rating } = props.data;
+  const { id, title, price, category, image } = props.data;
 
   let productPrice = price;
 

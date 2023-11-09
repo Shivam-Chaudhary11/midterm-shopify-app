@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "../pagecss/CartPage.css"
 
 function CartItems(props) {
-  const { id, title, price, description, category, image, rating } = props.data;
+  const { id, title, price, category, image } = props.data;
   const cart = useSelector((state) => state.cart);
 
   const theProduct = cart.cartItems.filter((eachItem) => eachItem.id === id);
