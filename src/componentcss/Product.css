@@ -1,0 +1,80 @@
+.allProductsRow {
+  margin: 1rem 6rem;
+}
+.productHeartDivContainer {
+  padding: 0.5rem 0.7rem 0rem;
+  z-index: 1;
+}
+.productHeartDiv {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  width: 15%;
+  right: 0%;
+}
+
+.productHeart {
+  color: red;
+}
+
+.imageContainingDiv {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 15px 20px;
+  border-bottom: rgba(0, 0, 0, 0.099) solid;
+}
+
+.productImgMain {
+  transition: 0.1s;
+}
+
+.productImgMain:hover {
+  transform: scale(1.1);
+}
+
+img {
+  object-fit: cover;
+  vertical-align: super;
+}
+
+.allProductTitle {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productPriceDiv {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.addToCartBtnInAllProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.blueBtn {
+  background-color: rgb(41, 170, 255);
+  color: white;
+}
+
+.redBtn {
+  background-color: #ff5c5c;
+  color: white;
+}
+
+.starsIcon {
+  color: rgba(255, 217, 0, 0.93);
+}

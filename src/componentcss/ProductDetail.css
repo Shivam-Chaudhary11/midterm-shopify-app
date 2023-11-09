@@ -1,0 +1,64 @@
+.productDetailDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+.productDetailImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30rem;
+  margin-left: 5rem;
+  padding: 1rem 1rem;
+}
+
+.productDetailImg {
+  height: 100%;
+  width: 50%;
+  object-fit: contain;
+  transition: 1s;
+}
+
+.productDetailImg:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.productDetailContentDiv {
+  width: 50%;
+  padding: 4rem;
+}
+
+.productDetailBrand {
+  color: grey;
+}
+
+.productDetailContent2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productDetailContent2Left {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dollarSign,
+.subPrice {
+  color: grey;
+}
+
+.mainPrice {
+  font-size: 1.5rem;
+}
+
+.productDetailContent2Right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

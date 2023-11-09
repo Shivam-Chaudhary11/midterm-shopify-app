@@ -1,0 +1,47 @@
+.formDivContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0vh;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input {
+  border: 2px solid #aaaaaa5f;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  outline: none;
+  box-shadow: 2px 2px 4px -1px #aaaaaa83;
+}
+
+.loginPageBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signupPageBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}

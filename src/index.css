@@ -1,13 +1,113 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+  
+}
+.loadingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* media query */
+
+@media (max-width: 700px) {
+  .navbarComp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 0px 1vh;
+    position: static;
+  }
+  .categoryNames {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .shopWord {
+    font-size: 4rem;
+  }
+  .shopWord:hover {
+    color: rgb(41, 170, 255);
+    text-decoration: none;
+  }
+
+  .mainCartDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartProductDiv {
+    width: 70%;
+  }
+
+  .cartDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0vh;
+  }
+
+  .imageDiv {
+    width: 100%;
+  }
+  .contentDiv {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartSummaryDiv {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loadingPage {
+    margin: 10vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  .footerExtra {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+  }
+  .footerEndNotes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .productDetailDiv {
+    flex-direction: column;
+    margin: 2vh 0vh;
+  }
+  .productDetailImageDiv {
+    width: 100%;
+    margin: 0px;
+  }
+  .productDetailContentDiv {
+    width: 100%;
+  }
+  .productDetailContent2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  
 }

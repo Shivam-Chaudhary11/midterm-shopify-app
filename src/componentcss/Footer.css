@@ -1,0 +1,26 @@
+.footerDiv {
+  background-color: rgb(0, 84, 139);
+  padding: 1rem 1rem 1rem;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.socialIconDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footerExtra {
+  display: flex;
+  justify-content: space-between;
+}
+
+

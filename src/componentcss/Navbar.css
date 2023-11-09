@@ -1,0 +1,117 @@
+.navbarComp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 4.5rem;
+  padding: 1rem 0rem;
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0px 7px 10px -12px rgba(0, 0, 0, 0.45);
+}
+
+.shopWord {
+  margin: 0px;
+  font-size: 4em;
+  color: rgb(17, 135, 213);
+  cursor: pointer;
+  transform: scale(1); 
+  transition: all 0.3s ease-in-out;
+}
+
+.shopWord:hover {
+  color: #ff0000;
+  text-decoration: double;
+  font-size: 4.1em; 
+  transform: scale(1.1); 
+}
+
+.navbarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropDownBtn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 10px;
+  background-color: wheat;
+  box-shadow: 0px 0px 4px 0px grey;
+}
+
+.dropDownBtnContent {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp {
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainCartIcon {
+  cursor: pointer;
+}
+
+.navbarWishDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wishLengthDiv {
+  background-color: black;
+  border-radius: 10rem;
+  margin-left: -0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.wishLengthSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 20rem;
+  padding: 0.2rem 0.58rem;
+  text-decoration: none;
+}
+
+.navbarCartDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cartLengthDiv {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10rem;
+  margin-left: -1rem;
+  margin-bottom: 1.8rem;
+}
+.cartLengthSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 20rem;
+  padding: 0.2rem 0.55rem;
+}
