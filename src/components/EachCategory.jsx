@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState, useCallback } from "react";
 import Endpoints from "../api/Endpoints";
 import Product from "./Product";
-import { RingLoader } from "react-spinners";
 
 function EachCategory(props) {
   const { categoryName } = props.data;
@@ -35,9 +34,6 @@ function EachCategory(props) {
           </div>
         ) : (
           <div className="loadingPage">
-            <div>
-              <RingLoader color="rgb(41, 170, 255)" />
-            </div>
             <div className="loadingPageText">
               <p>Loading...</p>
             </div>

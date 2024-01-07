@@ -76,12 +76,11 @@ function WishlistItems(props) {
               {isItemInCart ? "Remove from Cart" : "Add to Cart"}
             </button>
             <div>
-              <MdDeleteForever
+              <button
+              className="wishPageRemoveBtn"
                 onClick={handleRemoveItemFromWish}
-                style={{ cursor: "pointer" }}
-                size={"1.8rem"}
-                color="#ff0000"
-              />
+                
+              >Remove From Wishlist</button>
             </div>
           </div>
         </div>

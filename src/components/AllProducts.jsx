@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Endpoints from "../api/Endpoints";
 import Product from "./Product";
-import { RingLoader } from "react-spinners";
+
 
 function AllProducts() {
   const [products, setProducts] = useState([]);
@@ -31,9 +31,6 @@ function AllProducts() {
           </div>
         ) : (
           <div className="loadingPage">
-            <div>
-              <RingLoader color="rgb(41, 170, 255)" />
-            </div>
             <div className="loadingPageText">
               <p>Loading...</p>
             </div>

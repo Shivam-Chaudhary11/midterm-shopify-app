@@ -1,5 +1,6 @@
 .allProductsRow {
   margin: 1rem 6rem;
+  
 }
 .productHeartDivContainer {
   padding: 0.5rem 0.7rem 0rem;
@@ -31,10 +32,7 @@
 
 .productImgMain {
   transition: 0.1s;
-}
-
-.productImgMain:hover {
-  transform: scale(1.1);
+  
 }
 
 img {
@@ -68,11 +66,23 @@ img {
 .blueBtn {
   background-color: rgb(41, 170, 255);
   color: white;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+.blueBtn:hover{
+  background-color: rgb(0, 191, 255);
+  font-size: 1.1em; 
+  transform: scale(1);
 }
 
 .redBtn {
   background-color: #ff5c5c;
   color: white;
+}
+.redBtn:hover{
+  background-color: rgb(240, 100, 100);
+  font-size: 1.1em; 
+  transform: scale(1);
 }
 
 .starsIcon {

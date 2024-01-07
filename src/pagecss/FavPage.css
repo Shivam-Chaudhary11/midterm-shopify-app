@@ -1,5 +1,22 @@
+.mainCartDivWish{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  background-color: #b4f2fc;
+}
+
 .wishPageBtnDivContainer {
   display: flex;
   align-items: center;
   gap: 1vw;
+}
+.wishPageRemoveBtn{
+  background-color: #dc3545;
+  color: white; 
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.2s ease;
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }

@@ -17,7 +17,7 @@ function Wishlist() {
   return (
     <>
       {wishlist.length ? (
-        <div className="mainCartDiv">
+        <div className="mainCartDivWish">
           <div className="card row cartProductDiv">
             <div className="cartScroll">
               {wishlist.map((product) => (

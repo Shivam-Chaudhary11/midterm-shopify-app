@@ -2,7 +2,6 @@ import { RiAccountCircleLine } from "react-icons/ri";
 import { FaHeart } from "react-icons/fa";
 import { TbLogin } from "react-icons/tb";
 import { FaRegAddressCard } from "react-icons/fa";
-import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -47,21 +46,12 @@ function Navbar() {
               <FaRegAddressCard size={"18px"} />
               Sign Up
             </Link>
-            <hr />
-            <Link to={"/cartPage"} className="dropdown-item">
-              <AiOutlineShoppingCart size={"20px"} />
-              Cart
-            </Link>
-            <Link to={"/favorites"} className="dropdown-item">
-              <MdOutlineFavoriteBorder size={"20px"} />
-              Favorites
-            </Link>
           </div>
         </div>
         <div>
           <Link to={"/favorites"} className="navbarWishDiv">
-            <div>
-              <FaHeart size={"1.9em"} color="red" />
+            <div className="navbarWishIcon">
+              <FaHeart/>
             </div>
             <div
               className={cart.wishListItems.length > 0 ? "wishLengthDiv" : null}
@@ -76,8 +66,8 @@ function Navbar() {
         </div>
         <div>
           <Link to={"/cartPage"} className="navbarCartDiv">
-            <div>
-              <AiOutlineShoppingCart color="black" size={"2.5rem"} />
+            <div className="navbarCartIcon">
+              <AiOutlineShoppingCart />
             </div>
             <div className={cart.cartItems.length > 0 ? "cartLengthDiv" : null}>
               <span className="cartLengthSpan">

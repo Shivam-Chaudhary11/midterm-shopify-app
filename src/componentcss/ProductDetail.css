@@ -20,12 +20,9 @@
   width: 50%;
   object-fit: contain;
   transition: 1s;
+  cursor: pointer;
 }
 
-.productDetailImg:hover {
-  transform: scale(1.1);
-  overflow: hidden;
-}
 
 .productDetailContentDiv {
   width: 50%;

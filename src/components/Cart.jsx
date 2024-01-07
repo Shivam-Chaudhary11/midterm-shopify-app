@@ -26,7 +26,7 @@ function Cart() {
             </div>
           </div>
 
-          <div className="card cartSummaryDiv">
+          <div className="cartSummaryDiv">
             <div className="summaryDiv">
               <div className="text-center h4 orderSummary">Order Summary</div>
               <div className="row subtotal">
@@ -45,6 +45,9 @@ function Cart() {
                 <p className="col-lg-7 h4">Order Total</p>
                 <p className="col-lg-5 h5">${orderTotal.toFixed(2)}</p>
               </div>
+              <button className="checkout-btn">
+                checkout
+              </button>
             </div>
           </div>
         </div>

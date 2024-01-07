@@ -1,14 +1,13 @@
 .categoryNames {
   display: flex;
-
   justify-content: center;
   align-items: center;
   margin: 1px 70px;
   padding: 10px;
   border-radius: 2px;
-  box-shadow: 0px 7px 10px -12px rgba(0, 0, 0, 0.45);
+  box-shadow: 3px 12px 14px -10px rgba(0, 0, 0, 0.50);
   gap: 4rem;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .eachCategoryName {
@@ -17,7 +16,7 @@
 
 .eachCategoryName:hover {
   color: rgb(0, 0, 0);
-  text-decoration: none;
+  text-decoration-line: underline;
 }
 
 /* loading Page */
